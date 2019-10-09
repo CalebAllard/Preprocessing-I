@@ -223,6 +223,8 @@ main {
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    padding: 0 0;
+    width: 100%;
   }
 }
 main h2 {
@@ -260,7 +262,7 @@ main .skills ul li {
   }
 }
 main .work-history {
-  width: 100%;
+  width: 90%;
   height: 35%;
   display: flex;
   flex-direction: column;
@@ -282,7 +284,11 @@ main .work-history tr td {
 }
 @media (max-width: 500px) {
   main .work-history {
-    width: 90%;
+    font-size: 1.2rem;
+  }
+  main .work-history table {
+    width: 120%;
+    align-self: center;
   }
 }
 footer {
