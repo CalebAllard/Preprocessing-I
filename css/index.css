@@ -249,6 +249,13 @@ main .work-history {
 main .work-history h2 {
   padding-bottom: 2%;
 }
+main .work-history table tr:nth-child(even) {
+  background-color: #353b48;
+  color: #f5f6fa;
+}
+main .work-history th {
+  padding: 2%;
+}
 main .work-history tr td {
   text-align: center;
   padding: 3% 0;
