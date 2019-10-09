@@ -202,9 +202,10 @@ header div p {
   font-size: 1.6rem;
 }
 header div button {
-  width: 15%;
+  width: 15rem;
   background-color: #f5f6fa;
   border-radius: 5px;
+  padding: 1rem 0;
 }
 main {
   font-size: 1.6rem;
@@ -214,6 +215,15 @@ main {
   align-content: space-around;
   height: 85vh;
   padding: 0 5%;
+}
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
 }
 main h2 {
   font-weight: 800;
@@ -227,6 +237,11 @@ main .about {
   flex-direction: column;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  main .about {
+    width: 90%;
+  }
+}
 main .skills {
   width: 45%;
   height: 35%;
@@ -238,6 +253,11 @@ main .skills {
 main .skills ul li {
   padding: 3% 10%;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  main .skills {
+    width: 90%;
+  }
 }
 main .work-history {
   width: 100%;
@@ -259,6 +279,11 @@ main .work-history th {
 main .work-history tr td {
   text-align: center;
   padding: 3% 0;
+}
+@media (max-width: 500px) {
+  main .work-history {
+    width: 90%;
+  }
 }
 footer {
   text-align: center;

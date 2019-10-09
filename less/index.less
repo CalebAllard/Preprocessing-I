@@ -122,9 +122,11 @@ header{
 		}
 
 		button{
-			width:15%;
+			width:15rem;
 			background-color:@secondary-color-light;
 			border-radius: 5px;
+			padding: 1rem 0;
+			
 		}
 	}
 		
@@ -138,6 +140,13 @@ header{
 		align-content:space-around;
 		height:85vh;
 		padding:0 5%;
+		@media (max-width:500px){
+			flex-direction:column;
+			flex-wrap:nowrap;
+			justify-content: space-around;
+			align-items: center;
+			height:100vh
+		}
 
 		h2{
 			font-weight:800;
@@ -148,6 +157,9 @@ header{
 			width:45%;
 			height:35%;
 			.flex-column();
+			@media (max-width:500px){
+				width:90%;
+			}
 		}
 		.skills{
 			
@@ -158,6 +170,9 @@ header{
 			ul li{
 				padding: 3% 10%;
 				font-size:1.6rem;
+			}
+			@media (max-width:500px){
+				width:90%;
 			}
 		}
 		.work-history{
@@ -178,6 +193,9 @@ header{
 				text-align:center;
 				padding: 3% 0;
 				
+			}
+			@media (max-width:500px){
+				width:90%;
 			}
 		}
 		
