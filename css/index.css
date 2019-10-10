@@ -1,1 +1,300 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+/*
+	My code starts here 
+*/
+a {
+  text-decoration: none;
+}
+nav {
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 240%;
+}
+header {
+  background-color: #353b48;
+  color: #f5f6fa;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 5%;
+}
+header .header-text {
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 45%;
+  padding-bottom: 5%;
+}
+header .header-text p {
+  font-size: 2.4rem;
+}
+header .header-text h1 {
+  font-size: 4.2rem;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25%;
+}
+header div p {
+  font-size: 1.6rem;
+}
+header div button {
+  width: 15rem;
+  background-color: #f5f6fa;
+  border-radius: 5px;
+  padding: 1rem 0;
+}
+main {
+  font-size: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 85vh;
+  padding: 0 5%;
+}
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 0 0;
+    width: 100%;
+  }
+}
+main h2 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  padding-bottom: 2%;
+}
+main .about {
+  width: 45%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  main .about {
+    width: 90%;
+  }
+}
+main .skills {
+  width: 45%;
+  height: 35%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .skills ul li {
+  padding: 3% 10%;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  main .skills {
+    width: 90%;
+  }
+}
+main .work-history {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .work-history h2 {
+  padding-bottom: 2%;
+}
+main .work-history table tr:nth-child(even) {
+  background-color: #353b48;
+  color: #f5f6fa;
+}
+main .work-history th {
+  padding: 2%;
+}
+main .work-history tr td {
+  text-align: center;
+  padding: 3% 0;
+}
+@media (max-width: 500px) {
+  main .work-history {
+    font-size: 1.2rem;
+  }
+  main .work-history table {
+    width: 120%;
+    align-self: center;
+  }
+}
+footer {
+  text-align: center;
+  padding: 5%;
+  font-size: 1.2rem;
+  background-color: #353b48;
+  color: #f5f6fa;
+}
